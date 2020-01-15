@@ -1,5 +1,4 @@
 from .models import Habit
-import django_filters
 
 class HabitFilter(django_filters.FilterSet):
 	class Meta:
