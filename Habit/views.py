@@ -3,7 +3,6 @@ from django.contrib.auth import authenticate
 from django.http import HttpResponse
 from .models import Habit
 from .forms import AddForm
-from .filters import HabitFilter
 
 # Create your views here.
 def Habit_show(request):
