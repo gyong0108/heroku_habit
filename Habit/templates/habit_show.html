@@ -127,6 +127,9 @@
 		</div>
 		<script>
 			$(document).ready(function(){
+				if(localStorage.getItem("btn_value") == ""){
+					localStorage.setItem("btn_value", "View Chart");
+				}
 				$("#btn_chart").val(localStorage.getItem("btn_value"));
 				$("#btnSubmit").click(function(){
 					if(localStorage.getItem("btn_value") == "View Table"){
