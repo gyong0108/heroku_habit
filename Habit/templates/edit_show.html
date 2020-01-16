@@ -129,7 +129,7 @@
 			var Sat = $("#eSat").is(':checked');
 			var Sun = $("#eSun").is(':checked');
 			$.ajax({
-				url: '/habit/modifyhabit/',
+				url: '/modifyhabit/',
 				method: 'POST',
 				data:{
 					habit: habit,
@@ -143,7 +143,7 @@
 					Sun:Sun,
 				},
 				success: function(result){
-					document.location = "/habit/";
+					document.location = "/";
 				}
 			});
 		});
@@ -151,13 +151,13 @@
 		$("#eDelete").click(function(){
 			var habit = $("#ehabit").val();
 			$.ajax({
-				url: '/habit/deletehabit/',
+				url: '/deletehabit/',
 				method: 'POST',
 				data:{
 					ehabit: habit,
 				},
 				success: function(result){
-					document.location = "/habit/";
+					document.location = "/";
 				}
 			});
 		});

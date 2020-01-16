@@ -157,7 +157,7 @@
 							Sun:Sun,
 						},
 						success: function(result){
-							document.location = "/habit/";
+							document.location = "/";
 						}
 					});
 				});
@@ -168,13 +168,13 @@
 					if(localStorage.getItem("btn_value") == "View Chart"){
 						localStorage.setItem("btn_value", "View Table");
 						$("#btn_chart").val(localStorage.getItem("btn_value"));
-						document.location = "chartshow/";
+						document.location = "/chartshow/";
 						return;
 					}
 					else{
 						localStorage.setItem("btn_value", "View Chart");
 						$("#btn_chart").val(localStorage.getItem("btn_value"));
-						document.location = "/habit/";
+						document.location = "/";
 						return;
 					}
 				});

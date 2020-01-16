@@ -18,7 +18,6 @@ def Add_Habit(request):
 
 def Edit_Habit(request):
 	habit_list = Habit.objects.filter(habit=request.POST.get('EditID'))
-	habit_filter = HabitFilter(request.GET, queryset=habit_list)
 	return render(request, 'edit_show.html', {'filter':habit_list})
 
 def Delete_Habit(request):
