@@ -1,1 +1,1 @@
-'web: gunicorn HabitTracker.wsgi --log-file -' 
+web: gunicorn gettingstarted.wsgi --log-file -
